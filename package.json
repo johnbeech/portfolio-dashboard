@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-dashboard",
+  "version": "1.0.0",
+  "description": "A Portfolio Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "product-monitor": "^1.8.12",
+    "request": "^2.58.0"
+  }
+}

@@ -1,0 +1,19 @@
+<jumbotron>
+    <h1>Portfolio Dashboard</h1>
+</jumbotron>
+
+<status-button data-url="https://www.bbc.co.uk/news/" data-contains="Watch/Listen">BBC News, Watch/Listen</status-button>
+
+<status-button data-url="https://www.bbc.co.uk/news/" data-contains="Teleportation">BBC News, Teleportation</status-button>
+
+<project-status data-source-url="http://localhost:8080/api/projectStatus"></project-status>
+
+<template for="project-status">
+    {{#each tasks}}
+    <p>
+        <a href="https://jira.dev.bbc.co.uk/browse/{{jiraID}}">
+            <button class="btn btn-success">{{jiraID}} : {{synopsis}}</button>
+        </a>
+    </p>
+    {{/each}}
+</template>
